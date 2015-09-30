@@ -95,22 +95,35 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.navbar-default {
-    border-color: transparent;
+.navbar-default .nav li a{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 25px
 }
 
+#mainText{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
+#techSkills{
+    background-color: white;
+}
 
+#mainJumbo{
+    padding-top: 100px;
+    margin-bottom: 0px;
+    background-color: #E9E9E9;
+}
 
+#navbar{
+    border-width: 0 0 0px;
+    background-color: white;
+}
 
-
-
-
-
-
-
-
-
+#route66{
+    color: #424242;
+}
 
 
 /* ==========================================================================
