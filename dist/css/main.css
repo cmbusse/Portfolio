@@ -121,10 +121,19 @@ textarea {
     background-color: white;
 }
 
-#route66{
+.route66{
     color: #424242;
 }
 
+.liSkills{
+    list-style-type: none;
+    color: #424242;
+}
+
+.footer{
+    background-color: #FF9900;
+    color: #424242;
+}
 
 /* ==========================================================================
    Helper classes
