@@ -125,14 +125,21 @@ textarea {
     color: #424242;
 }
 
-.liSkills{
-    list-style-type: none;
-    color: #424242;
+.skillImg{
+    max-height: 60%;
+    max-width: 60%;
 }
 
 .footer{
     background-color: #FF9900;
     color: #424242;
+}
+
+.footerLine{
+    color: #424242;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0px;
 }
 
 /* ==========================================================================
