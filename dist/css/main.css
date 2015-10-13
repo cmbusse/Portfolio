@@ -95,45 +95,135 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ========== Navbar ========== */
 .navbar-default .nav li a{
     text-transform: uppercase;
     font-weight: bold;
     padding: 25px
 }
 
+#navbar{
+    border-width: 0 0 1px;
+    background-color: white;
+}
+
+/* ========== Header Styling ========== */
 #mainText{
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-#techSkills{
-    background-color: white;
-}
-
 #mainJumbo{
-    padding-top: 100px;
+    padding-top: 150px;
+    padding-bottom: 98px;
     margin-bottom: 0px;
     background-color: #E9E9E9;
 }
 
-#navbar{
-    border-width: 0 0 0px;
-    background-color: white;
+#headshot{
+    max-height: 80%;
+    max-width: 80%;
+    margin-top: 60px;
+    margin-left: 60px;
 }
 
-.route66{
-    color: #424242;
+/* ========== Section Styling ========== */
+.section{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.sectionRow{
+    padding-top: 50px;
+    padding-bottom: 25px;
 }
 
 .skillImg{
     max-height: 80%;
     max-width: 80%;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
+
+.skillRow{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+}
+
+/* ========== Media Styling =========== */
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px){
+    #skill1{
+        border-width: 0 1px 0 0;
+        border-style: solid;
+        border-color: white;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+    #skill2{
+        border-width: 0 1px 0 0;
+        border-style: solid;
+        border-color: white;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+    #skill3{
+        border-width: 0 1px 0 0;
+        border-style: solid;
+        border-color: white;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+    #skill4{
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 480px) and (max-width: 991px) {
+    #skill1{
+        border-width: 0 1px 0 0;
+        border-style: solid;
+        border-color: white;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    #skill2{
+        margin-bottom: 25px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    #skill3{
+        border-width: 0 1px 0 0;
+        border-style: solid;
+        border-color: white;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    #skill4{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+/* ========== General Styling ========== */
+
+.route66{
+    color: #424242;
+}
+
+.white{
+    color: white;
+}
+
+/* ========== Footer Styling ========== */
 
 .footer{
     background-color: #FF9900;
     color: #424242;
+    padding-bottom: 10px;
 }
 
 .footerLine{
@@ -141,10 +231,6 @@ textarea {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 0px;
-}
-
-#additional{
-    background-color: #3299BB;
 }
 
 /* ==========================================================================
