@@ -88,12 +88,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+
 .navbar-default .nav li a{
     text-transform: uppercase;
     font-weight: bold;
     padding: 25px
 }
 
+/* ========== Footer Styling ========== */
 .footer{
     background-color: #FF9900;
     color: #424242;
@@ -106,7 +109,21 @@ textarea {
     margin-bottom: 0px;
 }
 
-
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -40px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+    height: 40px; /* .push must be the same height as .footer */
+}
 
 
 
