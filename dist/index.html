@@ -10,12 +10,12 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -23,11 +23,6 @@
         <!-- Latest compiled JavaScript -->
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-        <!-- Notes -->
-        <!--
-        http://www.colourlovers.com/palette/148712/Gamebookers
-        http://madebyportia.com/
-        -->
     </head>
     <body style="background-color: white">
         <div class="wrapper">
@@ -49,8 +44,7 @@
                             <img src="img/namesmall.png" alt="name" style="margin-top: 15px; margin-bottom: 15px">
                         </a>
 
-                        <!--<
-                        a class="navbar-header page-scroll" href="/">
+                        <!--<a class="navbar-header page-scroll" href="/">
                             <img src="img/namesmall.png" alt="name" style="margin-top: 15px; margin-bottom: 15px">
                         </a>
                         -->
@@ -60,7 +54,7 @@
                         <ul class="nav navbar-nav navbar-right">
 
                             <li>
-                                <a href="/Portfolio/dist/index.html">Home</a>
+                                <a href="/Portfolio/dist/index.html" id="navActive">Home</a>
                             </li>
                             <li>
                                 <a href="/Portfolio/dist/resume/index.html">Resume</a>
@@ -73,7 +67,7 @@
                             </li>
                             <!--
                             <li>
-                                <a href="/">Home</a>
+                                <a href="/" id="navActive">Home</a>
                             </li>
                             <li>
                                 <a href="/resume">Resume</a>
@@ -133,6 +127,8 @@
             </section>
 
             <!-- Additional Skills -->
+            <!-- TODO:  Revisit this part and use media queries to properly align items with screen size
+                 Also fix the height of the lines so it looks better-->
             <section class="section" style="background-color: #3299BB">
                 <div class="container">
                     <div class="row">
@@ -142,7 +138,7 @@
                     </div>
                     <div class="row" class="sectionRow">
                         <div class="col-xs-6 col-md-3 white" id="skill1">
-                            <div class="row text-center" style="text-transform: uppercase">
+                            <div class="row text-center" style="text-transform: uppercase" id="skill1title">
                                 <h4>Self Taught</h4>
                             </div>
                             <div class="row">
@@ -152,7 +148,7 @@
                             </div>
                         </div>
                         <div class="col-xs-6 col-md-3 white" id="skill2">
-                            <div class="row text-center" style="text-transform: uppercase">
+                            <div class="row text-center" style="text-transform: uppercase" id="skill2title">
                                 <h4>User Experience Design</h4>
                             </div>
                             <div class="row">
@@ -162,19 +158,23 @@
                             </div>
                         </div>
                         <div class="col-xs-6 col-md-3 white" id="skill3">
-                            <div class="row text-center" style="text-transform: uppercase">
-                                <h4>Self Taught</h4>
+                            <div class="row text-center" style="text-transform: uppercase" id="skill3title">
+                                <h4>Client Relations</h4>
                             </div>
                             <div class="row">
-                                <p class="skillRow">This is some text about how I am self taught in my schooling and shit yo.</p>
+                                <p class="skillRow">For multiple projects I've worked closesly with clients in order to
+                                    develop a product that fits their needs.  I've gained experience bridging the gap
+                                    between a real world problem, and a designed solution.</p>
                             </div>
                         </div>
                         <div class="col-xs-6 col-md-3 white" id="skill4">
-                            <div class="row text-center" style="text-transform: uppercase">
-                                <h4>Self Taught</h4>
+                            <div class="row text-center" style="text-transform: uppercase" id="skill4title">
+                                <h4>Development Lifecycle</h4>
                             </div>
                             <div class="row">
-                                <p class="skillRow">This is some text about how I am self taught in my schooling and shit yo.</p>
+                                <p class="skillRow">From planning out basic designs to maintaining systems and analyzing
+                                    their shortcomings, I am experienced in working in every stage of the Software
+                                    Development Lifecycle</p>
                             </div>
                         </div>
                     </div>
