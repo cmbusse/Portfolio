@@ -96,33 +96,15 @@ textarea {
    ========================================================================== */
 
 /* ========== Navbar ========== */
-.navbar .nav > li > a{
+.navbar-default .nav li a{
     text-transform: uppercase;
     font-weight: bold;
-    padding: 0px;
-    margin: 25px;
-}
-
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
-    color: #333;
-    border-style: solid;
-    border-width: 0 0 2px;
-    border-color: #333;
+    padding: 25px
 }
 
 #navbar{
     border-width: 0 0 1px;
     background-color: white;
-}
-
-#navActive{
-    border-style: solid;
-    border-width: 0 0 2px;
-    border-color: #777;
-}
-
-#navActive:hover {
-    border-color: #333;
 }
 
 /* ========== Header Styling ========== */
@@ -139,8 +121,8 @@ textarea {
 }
 
 #headshot{
-    max-height: 444px;
-    max-width: 444px;
+    max-height: 80%;
+    max-width: 80%;
     margin-top: 60px;
     margin-left: 60px;
 }
@@ -170,44 +152,14 @@ textarea {
 
 /* ========== Media Styling =========== */
 
-@media (min-width: 1201px){
-    #skill1{
-        border-width: 0 1px 0 0;
-        border-style: solid;
-        border-color: white;
-        margin-top: 50px;
-        margin-bottom: 25px;
-        height: 174px;
-    }
-    #skill2{
-        border-width: 0 1px 0 0;
-        border-style: solid;
-        border-color: white;
-        margin-top: 50px;
-        margin-bottom: 25px;
-    }
-    #skill3{
-        border-width: 0 1px 0 0;
-        border-style: solid;
-        border-color: white;
-        margin-top: 50px;
-        margin-bottom: 25px;
-    }
-    #skill4{
-        margin-top: 50px;
-        margin-bottom: 25px;
-        height: 174px;
-    }
-}
 /* Landscape tablets and medium desktops */
-@media (max-width: 1200px) and (min-width: 992px){
+@media (min-width: 992px){
     #skill1{
         border-width: 0 1px 0 0;
         border-style: solid;
         border-color: white;
         margin-top: 50px;
         margin-bottom: 25px;
-        height: 213px;
     }
     #skill2{
         border-width: 0 1px 0 0;
@@ -215,7 +167,6 @@ textarea {
         border-color: white;
         margin-top: 50px;
         margin-bottom: 25px;
-        height: 213px;
     }
     #skill3{
         border-width: 0 1px 0 0;
@@ -223,21 +174,10 @@ textarea {
         border-color: white;
         margin-top: 50px;
         margin-bottom: 25px;
-        height: 213px;
     }
     #skill4{
         margin-top: 50px;
         margin-bottom: 25px;
-        height: 213px;
-    }
-    #skill1title{
-        padding-bottom: 19px;
-    }
-    #skill3title{
-        padding-bottom: 19px;
-    }
-    #skill4title{
-        padding-bottom: 19px;
     }
 }
 
