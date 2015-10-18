@@ -166,6 +166,7 @@ textarea {
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 15px;
+    text-align: justify;
 }
 
 /* ========== Media Styling =========== */
@@ -197,6 +198,10 @@ textarea {
         margin-top: 50px;
         margin-bottom: 25px;
         height: 174px;
+    }
+    #daycamp{
+        max-width: 100%;
+        padding-top: 37.5px;
     }
 }
 /* Landscape tablets and medium desktops */
@@ -239,10 +244,14 @@ textarea {
     #skill4title{
         padding-bottom: 19px;
     }
+    #daycamp{
+        max-width: 100%;
+        padding-top: 61px;
+    }
 }
 
 /* Portrait tablets and small desktops */
-@media (min-width: 480px) and (max-width: 991px) {
+@media (min-width: 0px) and (max-width: 991px) {
     #skill1{
         border-width: 0 1px 0 0;
         border-style: solid;
@@ -265,6 +274,10 @@ textarea {
     #skill4{
         margin-top: 25px;
         margin-bottom: 25px;
+    }
+    #daycamp{
+        max-width: 100%;
+        padding-top: 0px;
     }
 }
 
