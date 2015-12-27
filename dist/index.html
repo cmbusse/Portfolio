@@ -22,9 +22,11 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!-- TODO:  Add support for font on other pages -->
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 
     </head>
-    <body style="background-color: white">
+    <body>
         <div class="wrapper">
             <!--[if lt IE 8]>
                 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -33,26 +35,26 @@
             <!-- Navbar -->
             <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
                 <div class="container">
-                    <div class="navbar-header page-scroll">
+                    <div class="navbar-header page-scroll" id="nameContainer">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-nav" aria-expanded="false">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-
+                        <!--
                         <a class="navbar-header page-scroll" href="/Portfolio/dist/index.html">
                             <img src="img/namesmall.png" alt="name" style="margin-top: 15px; margin-bottom: 15px">
                         </a>
-
-                        <!--<a class="navbar-header page-scroll" href="/">
+                        -->
+                        <a class="navbar-header page-scroll" href="/">
                             <img src="img/namesmall.png" alt="name" style="margin-top: 15px; margin-bottom: 15px">
                         </a>
-                        -->
+
                     </div>
 
                     <div id="site-nav" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">
-
+                        <ul class="nav navbar-nav navbar-right" id="navUL">
+                            <!--
                             <li>
                                 <a href="/Portfolio/dist/index.html" id="navActive">Home</a>
                             </li>
@@ -65,7 +67,7 @@
                             <li>
                                 <a href="/Portfolio/dist/contact/index.html">Contact</a>
                             </li>
-                            <!--
+                            -->
                             <li>
                                 <a href="/" id="navActive">Home</a>
                             </li>
@@ -78,154 +80,146 @@
                             <li>
                                 <a href="/contact">Contact</a>
                             </li>
-                            -->
+
                         </ul>
                     </div>
                 </div>
             </nav>
 
             <!-- Jumbotron -->
-            <div class="jumbotron" id="mainJumbo">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 text-col" id="mainText">
-                            <h1 class="route66" style="text-transform: uppercase">Hi, I'm Chris Busse</h1>
-                            <p class="route66" style="text-align: justify">I'm a Computer Science Engineering student at the Univerity of Florida.
-                            This December I'll be graduating with my Bachelor's Degree and looking to enter industry
-                            as a Junior Front End Developer.  This website will hopefully give you an idea of where my
-                            skills lie, and hopefully let you know a bit about me.  Thanks for stopping by!</p>
-                        </div>
+            <section id="mainJumbo">
+                <div class="row">
+                    <div class="col-sm-6 text-col" id="mainText">
+                        <span class="yellow h1" style="text-transform: uppercase">Hi, I'm Chris Busse</span>
+                        <p class="text" style="text-align: justify; margin-top: 15px">I am a recent graduate of the
+                            University of Florida where I earned a Bachelor of Science in Computer Science
+                            Engineering.  I am experienced with both front end and back end web development, and am
+                            looking to enter industry as a Junior Web Developer.  Hopefully this website will give
+                            some insight into where my skills lie as well as letting you know a bit about me.  Thanks
+                            for stopping by!</p>
+                    </div>
 
-                        <div class="col-sm-6">
-                            <img src="img/pic1big.jpg" alt="..." class="img-circle" id="headshot">
-                        </div>
+                    <div class="col-sm-6">
+                        <img src="img/pic1big.jpg" alt="..." class="img-circle" id="headshot">
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- Technical Skills -->
-            <section class="section" style="background-color: white">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <h1 class="section-heading route66" style="text-transform: uppercase">Technical Skills</h1>
-                        </div>
+            <section id="techSkills">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1 class="section-heading text" style="text-transform: uppercase">Technical Skills</h1>
                     </div>
-                    <div class="row" class="sectionRow">
-                        <div class="col-xs-12 col-md-6 text-center">
-                            <img src="img/shields.png" alt="HTML" class="skillImg">
-                            <h4 class="text-muted">Experienced using the latest web standards of HTML, CSS, and Javascript
-                                to create responsive and easy to use web designs.</h4>
-                        </div>
-                        <div class="col-xs-12 col-md-6 text-center">
-                            <img src="img/angularjquerymysql.png" alt="CSS" class="skillImg">
-                            <h4 class="text-muted">Familiar with the use of other Web Development tools and frameworks,
-                                including AngularJS, jQuery, and SQL.</h4>
-                        </div>
+                </div>
+                <div class="row" class="sectionRow">
+                    <div class="col-xs-12 col-md-6 text-center">
+                        <img src="img/shields.png" alt="HTML" class="skillImg">
+                        <h4 class="text-muted">Experienced using the latest web standards of HTML, CSS, and Javascript
+                            to create responsive and easy to use web designs.</h4>
+                    </div>
+                    <div class="col-xs-12 col-md-6 text-center">
+                        <img src="img/angularjquerymysql.png" alt="CSS" class="skillImg">
+                        <h4 class="text-muted">Familiar with the use of other Web Development tools and frameworks,
+                            including AngularJS, jQuery, and SQL.</h4>
                     </div>
                 </div>
             </section>
 
             <!-- Additional Skills -->
-            <section class="section" style="background-color: #3299BB">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <h1 class="section-heading" style="text-transform: uppercase; color: white">Additional Skills</h1>
+            <section id="additionalSkills">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1 class="section-heading" style="text-transform: uppercase; color: white">Additional Skills</h1>
+                    </div>
+                </div>
+                <div class="row" class="sectionRow">
+                    <div class="col-xs-6 col-md-3 white" id="skill1">
+                        <div class="row text-center" style="text-transform: uppercase" id="skill1title">
+                            <h4>Self Taught</h4>
+                        </div>
+                        <div class="row">
+                            <p class="skillRow">Nearly all of my skills in programming have been Self Taught.
+                                I'm skilled in picking up new programming languages quickly, and learning how to
+                                operate in new and exciting environments.</p>
                         </div>
                     </div>
-                    <div class="row" class="sectionRow">
-                        <div class="col-xs-6 col-md-3 white" id="skill1">
-                            <div class="row text-center" style="text-transform: uppercase" id="skill1title">
-                                <h4>Self Taught</h4>
-                            </div>
-                            <div class="row">
-                                <p class="skillRow">Nearly all of my skills in programming have been Self Taught.
-                                    I'm skilled in picking up new programming languages quickly, and learning how to
-                                    operate in new and exciting environments.</p>
-                            </div>
+                    <div class="col-xs-6 col-md-3 white" id="skill2">
+                        <div class="row text-center" style="text-transform: uppercase" id="skill2title">
+                            <h4>User Experience Design</h4>
                         </div>
-                        <div class="col-xs-6 col-md-3 white" id="skill2">
-                            <div class="row text-center" style="text-transform: uppercase" id="skill2title">
-                                <h4>User Experience Design</h4>
-                            </div>
-                            <div class="row">
-                                <p class="skillRow">Designing products with the user's experience in mind leads to
-                                    improving accessibility and usability of products.  During my schooling I studied many
-                                    aspects of UXD for use in a wide variety of products.</p>
-                            </div>
+                        <div class="row">
+                            <p class="skillRow">Designing products with the user's experience in mind leads to
+                                improving accessibility and usability of products.  During my schooling I studied many
+                                aspects of UXD for use in a wide variety of products.</p>
                         </div>
-                        <div class="col-xs-6 col-md-3 white" id="skill3">
-                            <div class="row text-center" style="text-transform: uppercase" id="skill3title">
-                                <h4>Client Relations</h4>
-                            </div>
-                            <div class="row">
-                                <p class="skillRow">For multiple projects I've worked closesly with clients in order to
-                                    develop a product that fits their needs.  I've gained experience bridging the gap
-                                    between a real world problem, and a designed solution.</p>
-                            </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 white" id="skill3">
+                        <div class="row text-center" style="text-transform: uppercase" id="skill3title">
+                            <h4>Client Relations</h4>
                         </div>
-                        <div class="col-xs-6 col-md-3 white" id="skill4">
-                            <div class="row text-center" style="text-transform: uppercase" id="skill4title">
-                                <h4>Development Lifecycle</h4>
-                            </div>
-                            <div class="row">
-                                <p class="skillRow">From planning out basic designs to maintaining systems and analyzing
-                                    their shortcomings, I am experienced in working in every stage of the Software
-                                    Development Lifecycle</p>
-                            </div>
+                        <div class="row">
+                            <p class="skillRow">For multiple projects I've worked closesly with clients in order to
+                                develop a product that fits their needs.  I've gained experience bridging the gap
+                                between a real world problem, and a designed solution.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 white" id="skill4">
+                        <div class="row text-center" style="text-transform: uppercase" id="skill4title">
+                            <h4>Development Lifecycle</h4>
+                        </div>
+                        <div class="row">
+                            <p class="skillRow">From planning out basic designs to maintaining systems and analyzing
+                                their shortcomings, I am experienced in working in every stage of the Software
+                                Development Lifecycle</p>
                         </div>
                     </div>
                 </div>
             </section>
 
             <!-- Projects -->
-            <section class="section" style="background-color: #424242">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <h1 class="section-heading" style="text-transform: uppercase; color: white">Projects</h1>
-                        </div>
+            <section id="projects">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1 class="section-heading" style="text-transform: uppercase; color: white">Projects</h1>
                     </div>
-                    <div class="row" style="padding-top: 25px">
-                        <div class="col-xs-12 col-md-4">
-                            <img src="img/daycamp.png" alt="..." id="daycamp">
-                        </div>
-                        <div class="col-xs-12 col-md-8">
-                            <h4 class="white">DayCamp Web Application</h4>
-                            <p class="white" style="text-indent: 3em; text-align: justify">The DayCamp Web App is a current
-                            project that I am very excited to work on.  Approached by a day care business owner in Michigan,
-                            myself and two other seniors at UF have begun working on a project that will greatly simplify the
-                            lives of not only the employees, but also the parents that do business there.  We've worked closely
-                            with the client to identify these areas of improvement, and we are currently in the process of
-                            developing a product that fits their needs.</p>
-                            <p class="white" style="text-indent: 3em; text-align: justify">This project is being built using
-                            the MEANjs Full-Stack, and has been a terrific learning experience for all involved.  It is
-                            unfortunately not ready to be displayed to the public yet, but expect to see it online come early
-                            December.  If you would like to see more about this exciting project, please check out the
-                            <a href="/daycamp" style="color: white; text-decoration: underline">Project Page.</a></p>
-                        </div>
+                </div>
+                <div class="row" style="padding-top: 25px">
+                    <div class="col-xs-12 col-md-4">
+                        <img src="img/daycamp.png" alt="..." id="daycamp">
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                        <h4 class="white">DayCamp Web Application</h4>
+                        <p class="white" style="text-indent: 3em; text-align: justify">The DayCamp Web App is a current
+                        project that I am very excited to work on.  Approached by a day care business owner in Michigan,
+                        myself and two other seniors at UF have begun working on a project that will greatly simplify the
+                        lives of not only the employees, but also the parents that do business there.  We've worked closely
+                        with the client to identify these areas of improvement, and we are currently in the process of
+                        developing a product that fits their needs.</p>
+                        <p class="white" style="text-indent: 3em; text-align: justify">This project is being built using
+                        the MEANjs Full-Stack, and has been a terrific learning experience for all involved.  It is
+                        unfortunately not ready to be displayed to the public yet, but expect to see it online come early
+                        December.  If you would like to see more about this exciting project, please check out the
+                        <a href="/daycamp" style="color: white; text-decoration: underline">Project Page.</a></p>
                     </div>
                 </div>
             </section>
             <div class="push"></div>
         </div>
         <!-- Footer -->
-        <section class="footer">
+        <div class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <p class="footerLine pull-left" style="padding-right: 2px">Any Issues? | </p>
-                         <a href="/Portfolio/dist/contact/index.html" class="pull-left footerLine"> Contact Me</a>
-                        <!--
+                         <!--<a href="/Portfolio/dist/contact/index.html" class="pull-left footerLine"> Contact Me</a>
+                        -->
                          <a href="/contact" class="pull-left footerLine">Contact</a>
--->
                         <p class="footerLine pull-right">Copyright 2015 © Chris Busse. All Rights Reserved</p>
                     </div>
                 </div>
             </div>
-        </section>
-
+        </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
