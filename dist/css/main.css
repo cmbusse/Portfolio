@@ -639,16 +639,15 @@ a{
 
 @media (min-width: 768px) and (max-width: 991px) {
     #skill1{
-        border-width: 0 1px 0 0;
-        border-style: solid;
-        border-color: white;
         margin-top: 25px;
         margin-bottom: 25px;
     }
     #skill2{
+        border-width: 0 0 0 1px;
+        border-style: solid;
+        border-color: white;
         margin-bottom: 25px;
         margin-top: 25px;
-        margin-bottom: 25px;
     }
     #skill3{
         border-width: 0 1px 0 0;
