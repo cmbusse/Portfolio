@@ -26,7 +26,7 @@
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 
     </head>
-    <body>
+    <body style="background-image: url(img/bg.png)">
         <div class="wrapper">
             <!--[if lt IE 8]>
                 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -61,7 +61,7 @@
                             <a href="/Portfolio/dist/resume/index.html">Resume</a>
                         </li>
                         <li>
-                            <a href="/Portfolio/dist/daycamp/index.html">DayCamp</a>
+                            <a href="/Portfolio/dist/daycamp/index.html">Projects</a>
                         </li>
                         <li>
                             <a href="/Portfolio/dist/contact/index.html">Contact</a>
@@ -74,7 +74,7 @@
                             <a href="/resume">Resume</a>
                         </li>
                         <li>
-                            <a href="/daycamp">DayCamp</a>
+                            <a href="/daycamp">Projects</a>
                         </li>
                         <li>
                             <a href="/contact">Contact</a>
@@ -86,17 +86,19 @@
 
             <!-- Jumbotron -->
             <section id="mainJumbo">
-                <div class="col-sm-6 col-md-6 text-col" id="mainText">
-                    <span class="yellow h1" style="text-transform: uppercase">Hi, I'm Chris Busse</span>
-                    <p class="text" style="text-align: justify; margin-top: 15px">I am a recent graduate of the
-                        University of Florida where I earned a Bachelor of Science in Computer Science
-                        Engineering.  I am experienced with both front end and back end web development, and am
-                        looking to enter industry as a Junior Web Developer.  Hopefully this website will give
-                        some insight into where my skills lie as well as letting you know a bit about me.  Thanks
-                        for stopping by!</p>
-                </div>
-                <div class="col-sm-6 col-md-6">
-                    <img src="img/headshot.PNG" alt="..." class="img-circle" id="headshot">
+                <div class="row" id="mainRow">
+                    <div class="col-sm-6 col-md-6 text-col" id="mainText">
+                        <span class="yellow h1" style="text-transform: uppercase">Hi, I'm Chris Busse</span>
+                        <p class="text" style="text-align: justify; margin-top: 15px">I am a recent graduate of the
+                            University of Florida where I earned a Bachelor of Science in Computer Science
+                            Engineering.  I am experienced with both front end and back end web development, and am
+                            looking to enter industry as a Junior Web Developer.  Hopefully this website will give
+                            some insight into where my skills lie as well as letting you know a bit about me.  Thanks
+                            for stopping by!</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6" id="headshotCol">
+                        <img src="img/headshot.PNG" alt="..." class="img-circle" id="headshot">
+                    </div>
                 </div>
             </section>
 
@@ -104,27 +106,27 @@
             <section id="techSkills">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h1 class="section-heading text" style="text-transform: uppercase">Technical Skills</h1>
+                        <h1 class="section-heading">Technical Skills</h1>
                     </div>
                 </div>
                 <div class="row" class="sectionRow">
                     <div class="col-xs-12 col-md-6 text-center">
                         <img src="img/shields.png" alt="HTML" class="skillImg">
-                        <h4 class="text-muted">Experienced using HTML, CSS, and JavaScript to create responsive and easy to use Front Ends</h4>
+                        <h4 class="text">Experienced using HTML, CSS, and JavaScript to create responsive and easy to use Front Ends</h4>
                     </div>
                     <div class="col-xs-12 col-md-6 text-center">
                         <img src="img/angmongo.png" alt="CSS" class="skillImg">
-                        <h4 class="text-muted">Experienced using AngularJS and MongoDB to create efficient and powerful Back Ends</h4>
+                        <h4 class="text">Experienced using AngularJS and MongoDB to create efficient and powerful Back Ends</h4>
                     </div>
                 </div>
                 <div class="row" class="sectionRow">
                     <div class="col-xs-12 col-md-6 text-center">
                         <img src="img/jquerymysql.png" alt="HTML" class="skillImg">
-                        <h4 class="text-muted">Familiar with jQuery and SQL and their use in modern web applications</h4>
+                        <h4 class="text">Familiar with jQuery and SQL and their use in modern web applications</h4>
                     </div>
                     <div class="col-xs-12 col-md-6 text-center">
                         <img src="img/ang2react.png" alt="CSS" class="skillImg">
-                        <h4 class="text-muted">Excited to be learning about new technologies in the web development field
+                        <h4 class="text">Excited to be learning about new technologies in the web development field
                             in the form of Angular 2.0 and ReactJS</h4>
                     </div>
                 </div>
@@ -134,13 +136,13 @@
             <section id="additionalSkills">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h1 class="section-heading" style="text-transform: uppercase; color: white">Additional Skills</h1>
+                        <h1 class="section-heading">Additional Skills</h1>
                     </div>
                 </div>
-                <div class="row" class="sectionRow">
+                <div class="row" class="sectionRow" id="skillBox">
                     <div class="col-xs-12 col-sm-6 col-md-3 white" id="skill1">
                         <div class="row text-center" style="text-transform: uppercase" id="skill1title">
-                            <h4>Self Taught</h4>
+                            <h4 class="subTitle skillTitle">Self Taught</h4>
                         </div>
                         <div class="row">
                             <p class="skillRow">Nearly all of my skills in programming have been Self Taught.
@@ -150,7 +152,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3 white" id="skill2">
                         <div class="row text-center" style="text-transform: uppercase" id="skill2title">
-                            <h4>User Experience Design</h4>
+                            <h4 class="subTitle skillTitle">User Experience Design</h4>
                         </div>
                         <div class="row">
                             <p class="skillRow">Designing products with the user's experience in mind leads to
@@ -160,7 +162,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3 white" id="skill3">
                         <div class="row text-center" style="text-transform: uppercase" id="skill3title">
-                            <h4>Client Relations</h4>
+                            <h4 class="subTitle skillTitle">Client Relations</h4>
                         </div>
                         <div class="row">
                             <p class="skillRow">For multiple projects I've worked closesly with clients in order to
@@ -170,7 +172,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3 white" id="skill4">
                         <div class="row text-center" style="text-transform: uppercase" id="skill4title">
-                            <h4>Development Lifecycle</h4>
+                            <h4 class="subTitle skillTitle">Development Lifecycle</h4>
                         </div>
                         <div class="row">
                             <p class="skillRow">From planning out basic designs to maintaining systems and analyzing
@@ -185,25 +187,17 @@
             <section id="projects">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h1 class="section-heading" style="text-transform: uppercase; color: white">Projects</h1>
+                        <h1 class="section-heading">Projects</h1>
                     </div>
                 </div>
-                <div class="row" style="padding-top: 25px">
+                <div class="row" style="padding-top: 25px" id="projectBox">
                     <div class="col-xs-12 col-md-4">
                         <img src="img/daycamp.png" alt="..." id="daycamp">
                     </div>
-                    <div class="col-xs-12 col-md-8">
-                        <h4 class="white">DayCamp Web Application</h4>
-                        <p class="white" style="text-indent: 3em; text-align: justify">The DayCamp Web App is a current
-                        project that I am very excited to work on.  Approached by a day care business owner in Michigan,
-                        myself and two other seniors at UF have begun working on a project that will greatly simplify the
-                        lives of not only the employees, but also the parents that do business there.  We've worked closely
-                        with the client to identify these areas of improvement, and we are currently in the process of
-                        developing a product that fits their needs.</p>
-                        <p class="white" style="text-indent: 3em; text-align: justify">This project is being built using
-                        the MEANjs Full-Stack, and has been a terrific learning experience for all involved.  It is
-                        unfortunately not ready to be displayed to the public yet, but expect to see it online come early
-                        December.  If you would like to see more about this exciting project, please check out the
+                    <div class="col-xs-12 col-sm-12 col-md-8">
+                        <p class="white" id="subTitle">DayCamp Management Application</p>
+                        <p class="white" style="text-indent: 3em; text-align: justify">The DayCamp Management Application is a recently completed project that I have been working on since May 2015.  Approached by a day care business owner in Michigan, I set out to build a web application that would greatly simplify the lives of not only the employees, but also the parents that do business there.  </p>
+                        <p class="white" style="text-indent: 3em; text-align: justify">The daycare used very technologically outdated forms of record keeping, and sought a sleek and efficient web app to handle all of their attendance tracking as well as billing needs.  Working closely with the client, I determined all the areas I would be able to help improve her business and was able develop an extensive solution to all of her needs.  This project was built using the MEANjs Full-Stack, and has been a terrific learning experience.  If you would like to see more about this exciting project, please check out the
                         <a href="/daycamp" style="color: white; text-decoration: underline">Project Page.</a></p>
                     </div>
                 </div>

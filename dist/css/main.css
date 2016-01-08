@@ -153,6 +153,11 @@ textarea {
     color: #FFE792;
     font-family: 'Source Sans Pro', sans-serif;
 }
+.section-heading{
+    color: #FFE792;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+}
 .h1{
     font-size: 2em;
     font-family: 'Source Sans Pro', sans-serif;
@@ -165,11 +170,11 @@ textarea {
 
 /* ========== Section Styling ========== */
 p{
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a{
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .container{
@@ -185,20 +190,36 @@ a{
 .skillRow{
     padding-left: 15px;
     padding-right: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     text-align: justify;
+}
+
+.skillTitle{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.subTitle{
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /* ========== Media Styling =========== */
 
-@media (min-width: 1201px){
+@media (min-width: 1600px){
+    #skillBox{
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+    }
     #skill1{
         border-width: 0 1px 0 0;
         border-style: solid;
         border-color: white;
         margin-top: 50px;
         margin-bottom: 25px;
-        height: 174px;
     }
     #skill2{
         border-width: 0 1px 0 0;
@@ -217,37 +238,60 @@ a{
     #skill4{
         margin-top: 50px;
         margin-bottom: 25px;
-        height: 174px;
     }
     #daycamp{
-        max-width: 100%;
-        padding-top: 37.5px;
+        max-width: 337.656px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #subTitle{
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
     }
     #nameContainer{
-        margin-left: 140px;
+        margin-left: 255px;
     }
     #navUL{
-        margin-right: 115px;
+        margin-right: 240px;
+        margin-top: 10px;
+    }
+    .navbar .nav > li > a{
+        margin: 15px;
     }
     section{
-        padding: 75px 155px 75px 155px;
+        padding: 75px 255px 75px 255px;
         width: 100vw;
         max-width: 100%;
     }
     #mainJumbo{
-        padding-top: 150px;
-        padding-bottom: 98px;
+        padding-top: 200px;
+        padding-bottom: 0px;
         margin-bottom: 0px;
+    }
+    #mainRow{
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+
+        align-items: center;
     }
     #mainText{
         padding-top: 100px;
         padding-bottom: 100px;
     }
     #headshot{
-        max-height: 444px;
-        max-width: 444px;
-        margin-top: 0px;
-        margin-left: 0px;
+        width: 100%;
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
     .wrapper {
         min-height: 100%;
@@ -259,10 +303,10 @@ a{
         height: 40px; /* .push must be the same height as .footer */
     }
     #techSkills{
-        margin-top: 20px;
+        margin-top: 65px;
     }
     #additionalSkills{
-        margin-top: 20px;
+        margin-top: 65px;
     }
     .skillImg{
         max-height: 80%;
@@ -270,43 +314,44 @@ a{
         margin-bottom: 15px;
         margin-top: 15px;
     }
+    #projectBox{
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+
+        align-items: center;
+    }
     #projects{
-        margin-top: 0px;
+        margin-top: 65px;
+        margin-bottom: 65px;
     }
 }
 
-@media (max-width: 1200px) and (min-width: 992px){
-    #skill1{
-        border-width: 0 1px 0 0;
-        border-style: solid;
-        border-color: white;
-        margin-top: 50px;
-        margin-bottom: 25px;
-        height: 213px;
-    }
-    #skill2{
-        border-width: 0 1px 0 0;
-        border-style: solid;
-        border-color: white;
-        margin-top: 50px;
-        margin-bottom: 25px;
-        height: 213px;
-    }
-    #skill3{
-        border-width: 0 1px 0 0;
-        border-style: solid;
-        border-color: white;
-        margin-top: 50px;
-        margin-bottom: 25px;
-        height: 213px;
-    }
-    #skill4{
-        margin-top: 50px;
-        margin-bottom: 25px;
-        height: 213px;
-    }
+@media (max-width: 1479px) and (min-width: 1201px){
     #skill1title{
         padding-bottom: 19px;
+    }
+    #skill2title{
+        padding-bottom: 0px;
+    }
+    #skill3title{
+        padding-bottom: 19px;
+    }
+    #skill4title{
+        padding-bottom: 0px;
+    }
+}
+
+@media (max-width: 1510px) and (min-width: 1480px){
+    #skill1title{
+        padding-bottom: 19px;
+    }
+    #skill2title{
+        padding-bottom: 0px;
     }
     #skill3title{
         padding-bottom: 19px;
@@ -314,35 +359,93 @@ a{
     #skill4title{
         padding-bottom: 19px;
     }
+}
+
+@media (max-width: 1599px) and (min-width: 1201px){
+    #skillBox{
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+    }
+    #skill1{
+        border-width: 0 1px 0 0;
+        border-style: solid;
+        border-color: white;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+    #skill2{
+        border-width: 0 1px 0 0;
+        border-style: solid;
+        border-color: white;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+    #skill3{
+        border-width: 0 1px 0 0;
+        border-style: solid;
+        border-color: white;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+    #skill4{
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
     #daycamp{
-        max-width: 100%;
-        padding-top: 61px;
+        max-width: 337.656px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #subTitle{
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
     }
     #nameContainer{
-        margin-left: 140px;
+        margin-left: 155px;
     }
     #navUL{
-        margin-right: 115px;
+        margin-right: 140px;
+        margin-top: 10px;
+    }
+    .navbar .nav > li > a{
+        margin: 15px;
     }
     section{
-        padding: 75px 155px 75px 155px;
+        padding: 0px 155px 0px 155px;
         width: 100vw;
         max-width: 100%;
     }
     #mainJumbo{
-        padding-top: 150px;
-        padding-bottom: 98px;
+        padding-top: 175px;
+        padding-bottom: 0px;
         margin-bottom: 0px;
+    }
+    #mainRow{
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+
+        align-items: center;
     }
     #mainText{
         padding-top: 100px;
         padding-bottom: 100px;
     }
     #headshot{
-        max-height: 444px;
-        max-width: 444px;
-        margin-top: 60px;
-        margin-left: 60px;
+        width: 100%;
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
     .wrapper {
         min-height: 100%;
@@ -354,10 +457,10 @@ a{
         height: 40px; /* .push must be the same height as .footer */
     }
     #techSkills{
-        margin-top: 20px;
+        margin-top: 65px;
     }
     #additionalSkills{
-        margin-top: 20px;
+        margin-top: 65px;
     }
     .skillImg{
         max-height: 80%;
@@ -366,7 +469,171 @@ a{
         margin-top: 15px;
     }
     #projects{
-        margin-top: 0px;
+        margin-top: 65px;
+        margin-bottom: 65px;
+    }
+    #projectBox{
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+
+        align-items: center;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 992px){
+    #skillBox{
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+    }
+    #skill1{
+        border-width: 0 1px 0 0;
+        border-style: solid;
+        border-color: white;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+    #skill2{
+        border-width: 0 1px 0 0;
+        border-style: solid;
+        border-color: white;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+    #skill3{
+        border-width: 0 1px 0 0;
+        border-style: solid;
+        border-color: white;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+    #skill4{
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+    #daycamp{
+        max-width: 337.656px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #navbar{
+        height: 70px;
+    }
+    #nameContainer{
+        margin-left: 100px;
+    }
+    #navUL{
+        margin-right: 85px;
+        margin-top: 10px;
+    }
+    .navbar .nav > li > a{
+        margin: 15px;
+    }
+    section{
+        padding: 0px 100px 0px 100px;
+        width: 100vw;
+        max-width: 100%;
+    }
+    #mainJumbo{
+        padding-top: 140px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    #mainRow{
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+
+        align-items: center;
+    }
+    #mainText{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    #headshot{
+        width: 100%;
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .wrapper {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        margin: 0 auto -40px; /* the bottom margin is the negative value of the footer's height */
+    }
+    .footer, .push {
+        height: 40px; /* .push must be the same height as .footer */
+    }
+    #techSkills{
+        margin-top: 65px;
+    }
+    #additionalSkills{
+        margin-top: 65px;
+    }
+    .skillImg{
+        max-height: 80%;
+        max-width: 80%;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    #projects{
+        margin-top: 65px;
+        margin-bottom: 65px;
+    }
+    #projectBox{
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+
+        align-items: center;
+    }
+}
+
+@media (max-width: 1071px) and (min-width: 992px){
+    #skill1title{
+        padding-bottom: 45px;
+    }
+    #skill2title{
+        padding-bottom: 0px;
+    }
+    #skill3title{
+        padding-bottom: 19px;
+    }
+    #skill4title{
+        padding-bottom: 19px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 1072px){
+    #skill1title{
+        padding-bottom: 19px;
+    }
+    #skill2title{
+        padding-bottom: 0px;
+    }
+    #skill3title{
+        padding-bottom: 19px;
+    }
+    #skill4title{
+        padding-bottom: 0px;
     }
 }
 
@@ -395,8 +662,12 @@ a{
         margin-bottom: 25px;
     }
     #daycamp{
-        max-width: 100%;
-        padding-top: 0px;
+        display: none;
+    }
+    #subTitle{
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
     }
     #nameContainer{
         margin-left: 45px;
@@ -418,18 +689,16 @@ a{
         padding-bottom: 0px;
         margin-bottom: 0px;
     }
-    #mainText{
-        margin-top: 33px;
-    }
-    #mainText span{
-        max-width: 309px;
-        display: block;
-        margin: auto;
-    }
-    #mainText p{
-        max-width: 309px;
-        display: block;
-        margin: auto;
+    #mainRow{
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+
+        align-items: center;
     }
     .wrapper {
         min-height: 100%;
@@ -441,7 +710,7 @@ a{
         height: 40px; /* .push must be the same height as .footer */
     }
     #techSkills{
-        margin-top: 354px;
+        margin-top: 45px;
     }
     #additionalSkills{
         margin-top: 45px;
@@ -454,12 +723,14 @@ a{
     }
     #projects{
         margin-top: 0px;
+        margin-bottom: 65px;
     }
     #headshot{
-        max-width: 309px;
-        max-height: 309px;
+        width: 100%;
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
         display: block;
-        margin: auto;
     }
 }
 
@@ -481,8 +752,12 @@ a{
         margin-bottom: 15px;
     }
     #daycamp{
-        max-width: 100%;
-        padding-top: 0px;
+        display: none;
+    }
+    #subTitle{
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
     }
     #nameContainer{
         margin-left: 30px;
@@ -530,6 +805,7 @@ a{
     }
     #projects{
         margin-top: 30px;
+        margin-bottom: 50px;
     }
 }
 
@@ -551,8 +827,12 @@ a{
         margin-bottom: 15px;
     }
     #daycamp{
-        max-width: 100%;
-        padding-top: 0px;
+        display: none;
+    }
+    #subTitle{
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
     }
     #nameContainer{
         margin-left: 10px;
@@ -597,6 +877,7 @@ a{
     }
     #projects{
         margin-top: 0px;
+        margin-bottom: 35px;
     }
 }
 
@@ -632,7 +913,7 @@ a{
 }
 html, body {
     height: 100%;
-    background-image: url('/Portfolio/dist/img/bg.png');
+    /*background-image: url('img/bg.png');*/
 }
 
 /* ==========================================================================
